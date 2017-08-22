@@ -38,7 +38,7 @@ window.addEventListener('scroll', function(){
 function isTouchDevice() {
     return 'ontouchstart' in window || (navigator.maxTouchPoints > 0) || (navigator.maxTouchPoints > 0);
 }
-// jQuery(document).ready(function($) {
+jQuery(document).ready(function($) {
 if (isTouchDevice()) {
     $(".projectImg").flip({
         axis: 'y',
@@ -50,16 +50,4 @@ $(".projectImg").flip({
     trigger: 'hover'
     });
 }
-// });
-
-// function flipper(){
-//     $("#card").flip({
-//                 axis: 'x',
-//                 trigger: 'manual',
-//                 });
-
-//     $('#card').bind('mouseover',function(){
-//         $('#card').flip(true);}).bind('mouseleave',function(){
-//         $('#card').flip(false);
-//     });
-// }
+});
