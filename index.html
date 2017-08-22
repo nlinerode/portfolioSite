@@ -9,7 +9,8 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700|Saira:400,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" type="text/css" href="css/grid.css">
-    <script type="text/javascript" src="lib/jquery-3.2.1"></script>
+    <script type="text/javascript" src="/lib/jquery-3.2.1.js"></script> 
+    <script type="text/javascript" src="/lib/ramswaroop-animatescroll.js-58093b2/animatescroll.js"></script>
 </head>
 <body id="top">
 
@@ -21,9 +22,9 @@
         </div>
         <nav>
             <ul>
-                <li class="navLink"><a href="#about" class="navLink">About</a></li>
-                <li class="navLink"><a href="#projects" class="navLink">Projects</a></li>
-                <li class="navLink"><a href="#contact" class="navLink">Contact</a></li>
+                <li><a href="#about" onclick="$('#about').animatescroll();">About</a></li>
+                <li><a href="#projects" onclick="$('.projects').animatescroll();">Projects</a></li>
+                <li><a href="#contact" onclick="$('.contact').animatescroll();">Contact</a></li>
             </ul>
         </nav>
     </div>
@@ -132,8 +133,8 @@
 
 <!--footer  -->
 <footer>
-    &copy; 2017 NL Web Design
-    <a class="top-link" href="#top"> Top &#8593;</a>
+    <p>&copy; 2017 NL Web Design
+    <a class="top-link" href="#top" onclick="$('#top').animatescroll({scrollSpeed:400, padding:100});"> Top &#8593;</a></p>
 </footer>
 
 <script type="text/javascript" src="js/script.js">

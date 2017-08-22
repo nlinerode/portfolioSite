@@ -1,4 +1,3 @@
-
 var header = document.querySelector('header');
 window.addEventListener('scroll', function(){
         if (window.pageYOffset > 50){
