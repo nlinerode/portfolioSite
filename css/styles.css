@@ -1,4 +1,4 @@
-/*global  *******************************************************************/
+/*global  *********************************************************************************************************************/
 * {
     box-sizing: border-box;
     margin: 0;
@@ -13,7 +13,7 @@ html{
 body{
     background-color: #eee;
     font-family: 'Saira', sans-serif;
-    margin-bottom: 40px;
+    margin-bottom: 60px; 
     line-height: 1.5;
 }
 
@@ -64,9 +64,12 @@ hr{
     body{
         margin-top: 0;
     }
+    /* .showcase{
+        padding: 5% 25px;
+    } */
 }
 
-/* MEDIA < 210  *******************************************************************/
+/* MEDIA < 210  *****************************************************************************************************************/
 @media (min-width: 210px){
     body{
         margin-top: 25%;
@@ -150,14 +153,14 @@ hr{
         background-position: center;
         background-size: cover;
         border-bottom: 2px solid #111;
-        box-shadow: 0 3px 6px black;
+        box-shadow: 0 3px 6px #222;
         color: #fff;
         /* display: flex;   */
         /* flex-direction: column;  */
         height: 75vh;
          /* justify-content: center;  */
         overflow: none;
-        padding: 15% 25px;
+        padding:30% 25px;
         text-align: center;
         width:100%;
         
@@ -210,6 +213,11 @@ hr{
     .projectsH1{
         text-align: center;
     }
+
+    .projects h2{
+        color:#fff;
+    }
+
     .projectImg{
         background-color: #444;
         border: 2px solid #222;
@@ -217,13 +225,25 @@ hr{
         box-shadow: 3px 3px 6px #222;
         display:block;
         margin: 5% auto;
-        height:50vw;
+        height:50vw; 
         position: relative;
         text-align: center; 
-        width:50vw;
+        width:50vw; 
+    }
+  
+    .back{
+        color: #fff;
+        display:hidden;
+        padding:20% 2% 0;
+        text-align: center;
+    }
+    .back a{
+        color: #fff;
+        word-break: break-all;
     }
 
     .imgText{
+        padding: 1%;
         position: absolute;
         bottom: 0;
         left: 0;
@@ -241,6 +261,22 @@ hr{
         background-image: url('../img/charCountApp.PNG');
          background-position: center;
          background-size: cover;
+         border-radius: 15px;
+    }
+    .img2{
+        border-radius:15px;
+    }
+    .img3{
+        border-radius:15px;
+    }
+    .img4{
+        border-radius:15px;
+    }
+    .img5{
+        border-radius:15px;
+    }
+    .img6{
+        border-radius:15px;
     }
     /*CONTACT SECTION *******************************************************************/
     .contact{
@@ -257,8 +293,9 @@ hr{
     .socialContact{
         border: 1px groove black;
         border-radius: 15px;
+        box-shadow: 0 3px 6px #222;
         /* box-shadow: 5px 3px 5px #333; */
-        box-shadow: 3px 3px 6px #222;
+        /* box-shadow: 4px 3px 6px 6px #222; */
         /* float:right; */
         margin-top: 15%;
         min-height: 100%;
@@ -300,11 +337,11 @@ hr{
         -moz-transition: width .3s ease-in-out;
         transition: width .3s ease-in-out;
         width: 100%;
-
     }
 
     input:focus{
         border: 2px solid rgba(0, 106, 37, .5);
+        color: rgb(0, 106, 37);
         outline:none;
         width: 100%;
     }
@@ -325,6 +362,7 @@ hr{
 
     textarea:focus{
         border: 2px solid rgba(0, 106, 37, .5);
+        color: rgb(0, 106, 37);
         min-height: 8rem;
         outline:none;
         width: 100%;
@@ -358,7 +396,7 @@ hr{
         background-color: #111;
         bottom: 0;
         color:#ddd;
-        height: 40px;
+        height: 60px;
         left: 0;
         overflow: hidden;
         padding: 8px 0 0 0;
@@ -370,7 +408,8 @@ hr{
     .top-link{
         color: #fff;
         float:right;
-        margin-right: 2%;
+        position: absolute;
+        right: 0;
         text-decoration: none;
         transition: .1s;
     }
@@ -384,15 +423,24 @@ hr{
         position: sticky;
         transform: translateY(-3px) translateX(3px);
     }
+
+    .attributions{
+        font-size: .8rem;
+        padding-left: 1%;
+        position: relative;
+        bottom:0;
+        text-align: center;
+    }
 }
 
+/* MEDIA <350  *****************************************************************************************************/
 @media (min-width:350px){
     body{
         margin-top: 12.5%;
     }
 }
 
-/* MEDIA <550 *********************************************************************/
+/* MEDIA <550 *****************************************************************************************************/
 @media (min-width: 550px){ 
     body{
         margin-top: 6.25%;
@@ -403,6 +451,16 @@ hr{
         height:30vw;
         width:30vw;
     }
+    .top-link{
+        right: 1%;
+    }
+    .attributions{
+        font-size: .8rem;
+        padding-left: 1%;
+        position: relative;
+        bottom:0;
+        text-align: left;
+    }
 } 
 /* TODO add showcase h1 sizing to 1.2rem   */ 
 /* .showcase h1{ */
@@ -411,7 +469,7 @@ hr{
     /* .showcase p{ */
         /* font-size: 1.3rem; */
     /* } */
-/* MEDIA < 768  *******************************************************************/
+/* MEDIA < 768  ***********************************************************************************************************/
 @media (min-width: 768px){
     body{
         margin-top: 0;
@@ -480,6 +538,9 @@ hr{
     }
 
     /* SHOWCASE*********************************************************************/
+    .showcase{
+        padding: 20% 25px;
+    }
     .showcase h1{
         font-size: 2.5rem;
     }
