@@ -16,6 +16,7 @@ body{
     margin-bottom: 40px;
     line-height: 1.5;
 }
+
 .container{
     width: 80%;
     margin: auto;
@@ -26,8 +27,6 @@ h1{
     font-family: 'Raleway', sans-serif; 
     font-size: 2rem;
 }
-
-
 
 label {
     font-size: 1.2rem;
@@ -53,7 +52,6 @@ hr{
      color: #fff; 
     /* height: 30px; */
     opacity: .7;
-   
 }
 
 @media (min-width: 210px) and (orientation:landscape){
@@ -148,14 +146,15 @@ hr{
         border-bottom: 2px solid #111;
         box-shadow: 0 3px 6px black;
         color: #fff;
-        display: flex;
-        flex-direction: column; 
+        /* display: flex;   */
+        /* flex-direction: column;  */
         height: 75vh;
-        justify-content: center;
+         /* justify-content: center;  */
         overflow: none;
-        padding: 0 25px;
+        padding: 15% 25px;
         text-align: center;
         width:100%;
+        
     }
     .showcase h1{
         font-size: 1.5rem;
@@ -380,16 +379,31 @@ hr{
     }
 }
 
+@media (min-width:350px){
+    body{
+        margin-top: 12.5%;
+    }
+}
+
 /* MEDIA <550 *********************************************************************/
-@media (min-width: 550px){
+@media (min-width: 550px){ 
+    body{
+        margin-top: 6.25%;
+    }
     .projectImg{
         display:inline-block; 
         margin: 5% ; 
         height:30vw;
         width:30vw;
     }
-}
-
+} 
+/* TODO add showcase h1 sizing to 1.2rem   */ 
+/* .showcase h1{ */
+        /* font-size: 2.5rem; */
+    /* } */
+    /* .showcase p{ */
+        /* font-size: 1.3rem; */
+    /* } */
 /* MEDIA < 768  *******************************************************************/
 @media (min-width: 768px){
     body{
@@ -573,7 +587,7 @@ hr{
     }
     .projectImg{
         float: left;
-         margin: 4.16%; 
+         margin: 3%; 
         /* padding-bottom: 25%;  */
         height: 20vw;
         width: 20vw;
