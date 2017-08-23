@@ -70,7 +70,7 @@ hr{
 }
 
 /* MEDIA < 210  *****************************************************************************************************************/
-@media (min-width: 210px){
+@media screen and (min-width: 210px){
     body{
         margin-top: 25%;
     }
@@ -309,8 +309,8 @@ hr{
     }
 
     .contactContainer{
-        width: 100%;
         text-align: center;
+        width: 100%;
     }
 
     .socialContact{
@@ -339,7 +339,7 @@ hr{
         color: #000;
         font-size: 2rem;
         float:left;
-        margin:10% 8% 0;
+        margin:10% 5% 0 6%;
     }
 
     .fa:focus{
@@ -488,11 +488,13 @@ hr{
 }
 
 /* MEDIA <350  *****************************************************************************************************/
-@media (min-width:350px){
+@media screen and (min-width:350px){
     body{
         margin-top: 12.5%;
     }
-    
+    .fa{
+        margin:10% 10% 0 10%;
+    }
 }
 
 /* MEDIA <450 */
@@ -506,10 +508,13 @@ hr{
     .emptyImgText{
         font-size: 1.4rem !important;
     }
+    .fa{
+        margin:10% 10% 0 13%;
+    }
 }
 
 /* MEDIA <550 *****************************************************************************************************/
-@media (min-width: 550px){ 
+@media screen and (min-width: 550px){ 
     body{
         margin-top: 6.25%;
     }
@@ -529,6 +534,9 @@ hr{
         bottom:0;
         text-align: left;
     }
+    .fa{
+        margin:10% 10% 0 15%;
+    }
     .back p {
         font-size: .8rem;
     }
@@ -547,7 +555,7 @@ hr{
         /* font-size: 1.3rem; */
     /* } */
 /* MEDIA < 768  ***********************************************************************************************************/
-@media (min-width: 768px){
+@media screen and (min-width: 768px){
     body{
         margin-top: 0;
     }
@@ -680,6 +688,10 @@ hr{
         width: 80%;
     } 
 
+    .fa{
+        margin:10% 10% 0 5%;
+    }
+
     input {    
         display: block;
         font-family: 'Saira', sans-serif;
@@ -750,6 +762,9 @@ hr{
 @media screen and (min-width: 976px){
     .showcase{
         padding: 15% 25px;
+    }
+    .fa{
+        margin:10% 10% 0 9%;
     }
     .back p{
         font-size: 1rem;
