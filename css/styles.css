@@ -273,12 +273,12 @@ hr{
 
     .img{
         border-radius: 15px;
-        background-image: url("../img/questionMark.jpeg");
+        background-image: url('../img/questionMark.jpeg"');
         background-position: center;
         background-size: cover;
     }
 
-    .img2{
+    /* .img2{
         border-radius:15px;
     }
     .img3{
@@ -291,7 +291,7 @@ hr{
         border-radius:15px;
     }
     .img6{
-        border-radius:15px;
+        border-radius:15px; */
     }
     /*CONTACT SECTION *******************************************************************/
     .contact{
