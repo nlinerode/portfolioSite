@@ -368,26 +368,13 @@ hr{
         outline:none;
         width: 100%;
     }
-
-    input::-webkit-input-placeholder{
-        color: rgb(0, 106, 37);
-    }
     input:focus::-webkit-input-placeholder{
-        color: rgb(0, 106, 37);
-    }
-    input:-moz-placeholder{
         color: rgb(0, 106, 37);
     }
     input:focus:-moz-placeholder{
         color:rgb(0, 106, 37);
     }
-    input::-moz-placeholder{
-        color:rgb(0, 106, 37);
-    }
     input:focus::-moz-placeholder{
-        color:rgb(0, 106, 37);
-    }
-    input:-ms-input-placeholder{
         color:rgb(0, 106, 37);
     }
     input:focus:-ms-input-placeholder{
@@ -418,12 +405,6 @@ hr{
     textarea:focus::-webkit-input-placeholder{
         color:rgb(0, 106, 37);
     }
-    textarea:-moz-placeholder{
-        color:rgb(0, 106, 37);
-    }
-    textarea:focus::-webkit-input-placeholder{
-        color:rgb(0, 106, 37);
-    }
     textarea:focus:-moz-placeholder{
         color:rgb(0, 106, 37);
     }
@@ -450,6 +431,7 @@ hr{
     }
 
     .btnMessage{
+        color: red;
         display: none;
         position: relative;
         z-index: 99;
