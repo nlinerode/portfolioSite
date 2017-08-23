@@ -7,10 +7,10 @@ window.addEventListener('scroll', function(){
         }
     });
 
-$(".projectImg").flip({
-    axis:"y",
-    trigger: "click"
-});
+// $(".projectImg").flip({
+//     axis:"y",
+//     trigger: "click"
+// });
 
 // $(".projectImg").on('flip:change',function(){
 //   $('.projectImg').flip('toggle');
@@ -35,19 +35,19 @@ $(".projectImg").flip({
 //     });
 // });
 // 
-// function isTouchDevice() {
-//     return 'ontouchstart' in window || (navigator.maxTouchPoints > 0) || (navigator.maxTouchPoints > 0);
-// }
-// jQuery(document).ready(function($) {
-// if (isTouchDevice()) {
-//     $(".projectImg").flip({
-//         axis: 'y',
-//         trigger: 'click'
-//     });
-// } else {
-// $(".projectImg").flip({
-//     axis: 'y',
-//     trigger: 'hover'
-//     });
-// }
-// });
+function isTouchDevice() {
+    return 'ontouchstart' in window || (navigator.maxTouchPoints > 0) || (navigator.maxTouchPoints > 0);
+}
+jQuery(document).ready(function($) {
+if (isTouchDevice()) {
+    $(".projectImg").flip({
+        axis: 'y',
+        trigger: 'click'
+    });
+} else {
+$(".projectImg").flip({
+    axis: 'y',
+    trigger: 'hover'
+    });
+}
+});
