@@ -266,9 +266,9 @@ hr{
 
     .img1{
         background-image: url('../img/charCountApp.PNG');
-         background-position: center;
-         background-size: cover;
-         border-radius: 15px;
+        background-position: center;
+        background-size: cover;
+        border-radius: 15px;
     }
 
     .img2{
@@ -369,6 +369,31 @@ hr{
         width: 100%;
     }
 
+    input::-webkit-input-placeholder{
+        color: rgb(0, 106, 37);
+    }
+    input:focus::-webkit-input-placeholder{
+        color: rgb(0, 106, 37);
+    }
+    input:-moz-placeholder{
+        color: rgb(0, 106, 37);
+    }
+    input:focus:-moz-placeholder{
+        color:rgb(0, 106, 37);
+    }
+    input::-moz-placeholder{
+        color:rgb(0, 106, 37);
+    }
+    input:focus::-moz-placeholder{
+        color:rgb(0, 106, 37);
+    }
+    input:-ms-input-placeholder{
+        color:rgb(0, 106, 37);
+    }
+    input:focus:-ms-input-placeholder{
+        color: rgb(0, 106, 37);
+    }
+
     textarea{
         border: 2px solid #ddd;
         border-radius: 3px;
@@ -390,6 +415,18 @@ hr{
         outline:none;
         width: 100%;
     }
+    textarea:focus::-webkit-input-placeholder{
+        color:rgb(0, 106, 37);
+    }
+    textarea:-moz-placeholder{
+        color:rgb(0, 106, 37);
+    }
+    textarea:focus::-webkit-input-placeholder{
+        color:rgb(0, 106, 37);
+    }
+    textarea:focus:-moz-placeholder{
+        color:rgb(0, 106, 37);
+    }
 
     button{
         background-color: #eee;
@@ -410,6 +447,18 @@ hr{
         color: rgba(0, 106, 37, .8);
         cursor: progress;
         outline:none;
+    }
+
+    .btnMessage{
+        display: none;
+        position: relative;
+        z-index: 99;
+    }
+    button:hover + div{
+        display: block;
+    }
+    button:focus + div{
+        display:block;
     }
 
     
