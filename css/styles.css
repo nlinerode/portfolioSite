@@ -273,7 +273,7 @@ hr{
 
     .img{
         border-radius: 15px;
-        background-image: url('../img/questionMark.jpeg"');
+        background-image: url('../img/questionMark.jpeg');
         background-position: center;
         background-size: cover;
     }
@@ -292,7 +292,7 @@ hr{
     }
     .img6{
         border-radius:15px; */
-    }
+    /* } */
     /*CONTACT SECTION *******************************************************************/
     .contact{
         /* padding-top: 25%; */
