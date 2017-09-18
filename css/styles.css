@@ -256,7 +256,7 @@ hr{
         height:50vw; 
         margin: 5% auto;
         overflow-x: auto;
-        overflow-y: scroll;
+        overflow-y: auto;
         position: relative;
         text-align: center; 
         width:50vw; 
@@ -276,7 +276,6 @@ hr{
         text-decoration: none;
         transition: all ease .3s;
         word-break: break-all;
-        -ms-word-break: break-all;
     }
 
     .back a:hover{
@@ -300,7 +299,7 @@ hr{
     .emptyImgText:hover{
         color: #ddd;
         /* TODO get opinion on the translate */
-        transform: translateY(50px)
+        transform: translateY(10px)
     }
     .projects a:visted{
         color: #fff;
@@ -813,9 +812,10 @@ hr{
     .projectImg{
         float: left;
         font-size: 1rem;
-        line-height: 1.2;
-        margin: 3%; 
         height: 20vw;
+        line-height: 1.2;
+        margin: 3%;
+        /* overflow:auto;  */
         width: 20vw;
     }
     .back p {
@@ -842,5 +842,8 @@ hr{
     }
     .emptyImgText{
         font-size: 1.4rem !important;
+    }
+    .projectImg{
+        overflow: hidden;
     }
 }
