@@ -50,6 +50,9 @@ section{
 }
 img{
     border-radius: 10px;
+    border-right: 1px solid #444;
+    border-bottom: 1px solid #444;
+    box-shadow: 3px 3px 4px #444;
 }
 
 hr{
@@ -205,19 +208,24 @@ hr{
     /* RESPONSIVE SECTION  *********************************************************/
     .respWeb{
          /* TODO check on ie10 wpm to see if margins and padding affect jumping around */
-        padding-top: 10%;
+        padding-top: 25%;
     }
-    .ux{
-        /* float: left; */
-        width: 50vw;
+    .uxDiv{
+        float: none;
+        width: 100%;
+    }
+    .uxImgDiv{
+        float: none;
+        width: 100%;
     }
     .uxImg{
         display: block;
-        float:right;
         height:auto;
-        margin: 2% auto 5%;
-        width: 50vw;
+        margin: 10% auto;
+        width: 75vw;
     }
+
+    
 
     /* PROJECTS  *******************************************************************/
 
@@ -563,6 +571,9 @@ hr{
 
 /* MEDIA <550 *****************************************************************************************************/
 @media screen and (min-width: 550px){ 
+    article{
+        text-align: left;
+    }
     body{
         margin-top: 6.25%;
     }
@@ -697,24 +708,28 @@ hr{
     }
 
     /* RESPONSIVE SECTION  *********************************************************/
-
+    .respWeb{
+        padding-top: 9%;
+    }
     .uxDiv{
         float:left;
         width: 50%;
     }
     .uxImgDiv{
         float:right;
-        margin-left:5%;
-        width: 45%;
+        margin-left:9%;
+        margin-right: 1%;
+        width: 40%;
     }
     .uxImg{
-        /* display: inline-block; */
+        display: inline-block;
         height:auto;
+        margin: 0;
         width: 30vw;
     }
     /* CONTACT **************************************************************************/
     .contact{
-        padding: 4%;
+        padding: 9% 4% 4%;
     }
     
     button{
@@ -741,6 +756,7 @@ hr{
         border-radius: 15px;
         float:right;
         margin-top: 0;
+        margin-right:2%;
         min-height: 80%;
         padding: 5% 10% 10%;
         width: 80%;
