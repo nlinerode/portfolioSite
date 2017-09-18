@@ -195,7 +195,7 @@ hr{
 
     /* ABOUT  ********************************************************************/
     .about{
-        padding-top: 25%;
+        padding-top: 30%;
     }
     .personalImg{
         display: block;
@@ -208,7 +208,7 @@ hr{
     /* RESPONSIVE SECTION  *********************************************************/
     .respWeb{
          /* TODO check on ie10 wpm to see if margins and padding affect jumping around */
-        padding-top: 25%;
+        padding-top: 30%;
     }
     .uxDiv{
         float: none;
@@ -235,7 +235,7 @@ hr{
         background-image: -moz-linear-gradient(#eee, #ccc, #eee);
         background-image: -o-linear-gradient(#eee, #ccc, #eee);
         background-image: linear-gradient(#eee, #ccc, #eee) ;
-        padding-top: 25%;
+        padding-top: 30%;
     }
 
     .projects h2{
@@ -255,7 +255,8 @@ hr{
         font-size: .7rem;
         height:50vw; 
         margin: 5% auto;
-        overflow:hidden;
+        overflow-x: auto;
+        overflow-y: scroll;
         position: relative;
         text-align: center; 
         width:50vw; 
@@ -359,8 +360,7 @@ hr{
     }
     /*CONTACT SECTION *******************************************************************/
     .contact{
-        /* padding-top: 25%; */
-        padding: 25% 0 10%; 
+        padding: 30% 0 10%; 
         margin-bottom: 0;
     }
 
