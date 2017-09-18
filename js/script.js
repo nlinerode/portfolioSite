@@ -1,76 +1,82 @@
 var header = document.querySelector('header');
 var submitBtn = document.querySelector('button');
 var btnMessage = document.querySelector('.btnMessage');
+var projectImg = document.querySelectorAll('.projectImg');
+var imgText = document.querySelectorAll('.imgText');
 
-// submitBtn.addEventListener('mouseenter', btnMessageAdd);
-// submitBtn.addEventListener('mouseleave', btnMessageDelete);
-// submitBtn.addEventListener('click', btnMessageAdd);
+// window.addEventListener('load', init);
+init();
 
-window.addEventListener('scroll', function(){
+function init(){
+    scrollHeader();
+    isTouchDevice();
+    flipCard();
+    // hoverProjectImgText();
+}
+
+
+// recognizing touch device
+function isTouchDevice() {
+    return 'ontouchstart' in window || (navigator.maxTouchPoints > 0) || (navigator.maxTouchPoints > 0);
+}
+
+// Responsive Header to change color on scroll
+function scrollHeader(){
+    window.addEventListener('scroll', function(){
         if (window.pageYOffset > 50){
             header.classList.add('scrollNav');
         } else {
             header.classList.remove('scrollNav');
         }
     });
-
-
-// function btnMessageAdd(){
-//         btnMessage.innerHTML= "<p>Sorry, this won't send anything yet!</p>"; 
-// }
-// function btnMessageDelete(){
-//     btnMessage.textContent= "";
-// }
-
-function isTouchDevice() {
-    return 'ontouchstart' in window || (navigator.maxTouchPoints > 0) || (navigator.maxTouchPoints > 0);
 }
 
-
-jQuery(document).ready(function($) {
+// flipCard function
+function flipCard(){
     if (isTouchDevice()) {
         $(".projectImg").flip({
             axis: 'y',
             trigger: 'click'
         });
-        // btnMessageAdd();
     } else {
         $(".projectImg").flip({
             axis: 'y',
-            trigger: 'hover'
+            trigger: 'click'
         });
-        // btnMessageAdd();
-        // btnMessageDelete();
     }
-});
+}
 
 
 
-// $(".projectImg").flip({
-//     axis:"y",
-//     trigger: "click"
-// });
+// display Image Text on project images
+// function hoverProjectImgText(){ 
+//     if(isTouchDevice){
+//         return;
+//     } else if(projectImg.style.display === 'none'){
+//         for (var i = 0; i < projectImg.length; i++){
+//             addEventListener(projectImg[i], 'mouseenter', displayImageText);
+//     }
+//  } else{
+//         for (var i = 0; i < projectImg.length; i++){
+//             addEventListener(projectImg[i], 'mouseleave', hideImageText);       
+//         }
+//     }
+// }
 
-// $(".projectImg").on('flip:change',function(){
-//   $('.projectImg').flip('toggle');
-// });
+// function displayImageText(){
+//         imgText.style.display = 'inline';
+// }
+
+// function hideImageText(){
+//         imgText.style.display = 'none';
+// }
 
 
-// $(".projectImg").flip(true);
+// jQuery(document).ready(function($) {
 
-// $(".projectImg").flip(function(){
-    // $(".projectImg").on("flip:done", function(){
-        
-        // if ({axis: "y"}){
-            // $(".projectImg").flip({axis:"x"});
-        // } 
-    // });
-// });
-// $(".projectImg").flip(function(){
-//     $(".projectImg").on("flip:done", function(){
-//         if ({axis: "x"}){
-//             $(".projectImg").flip({axis:"y"});
-//         } 
 //     });
-// });
-// 
+    
+    
+    // submitBtn.addEventListener('mouseenter', btnMessageAdd);
+    // submitBtn.addEventListener('mouseleave', btnMessageDelete);
+    // submitBtn.addEventListener('click', btnMessageAdd);

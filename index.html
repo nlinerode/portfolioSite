@@ -13,10 +13,8 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" type="text/css" href="css/grid.css">
     <!-- Scripts -->
-    <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.js"></script> -->
     <script type="text/javascript" src="lib/jquery-3.2.1.js"></script> 
     <script type="text/javascript" src="lib/flip-master/dist/jquery.flip.js"></script> 
-    <!-- <script type="text/javascript" src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script> -->
     <script type="text/javascript" src="lib/animatescroll/animatescroll.js"></script>
 </head>
 <body id="top">
@@ -49,17 +47,38 @@
 
 <!--about me section  -->
 <section class="about" id="about">
-    <div class="container">  
-        <div class="vertText">
-            <h1>Who Me?</h1>
-        </div>
-        <div class="aboutImg">
+    <div class="container"> 
+        <h1 class="sectionH1">Who Me?</h1>
+        <div>
             <img src="img/SarahAndISmokeyMtns.jpg" alt="My wife and I in the Smokey Mountains" class="personalImg">
         </div>
-        <article class="aboutText">
-            <!-- <h1>Who Am I?</h1> -->
+        <article>
             <p>My name is Nathan Linerode. I am a professional junior web designer and developer.</p>
             <p>Canton, OH born and raised, relocated to Charlotte, NC. My life has taken new direction since moving to North Carolina. A drive and passion to continuously learn web technologies and languages, coupled by meeting many web developers of my caliber, has pushed me to new heights.</p>
+        </article>
+    </div>
+</section>
+<hr>
+
+<!-- Responsive Web Blurb -->
+<section class="respWeb">
+    <div class="container">
+        <h1 class="sectionH1">Responsive &amp; Mobile Driven Design</h1>
+        <article>
+            <p>Throuhout my process of studying and learning web development, a passion has grown in me for what I see as an inevitable future in the field.</p> <br>
+            <strong><em><p>Responsive and mobile web design.</p></em></strong> <br>
+            <p>From my own personal experience, I have noticed over the years the growing trend of using mobile devices to explore the Internet. Whether it be searching for a local business or restaurant, to searching for a job, mapping out a route and even reading the news, more and more often are mobile devices the primary medium. </p> <br>
+            
+            <h2>UI/UX For The Masses</h3>
+    
+            <div class="uxDiv">
+                <p>I find much excitement in engaging this medium and taking on the "mobile-first" approach in all of my projects. Whenever I find websites on the daily that are not very mobile friendly, I am constantly motivated to create a better user-experience in my own projects. Always searching for the best solution to a mobile-first platform is a challenge, but is overly rewarding.</p>
+            </div>
+            <div class="uxImgDiv">
+                <img src="img/uxpic.jpeg" alt="Two people using different media devices, a tablet and a laptop" class="uxImg">
+            </div>
+
+            
         </article>
     </div>
 </section>
@@ -68,96 +87,73 @@
 <!--projects section  -->
 <section class="projects" id="projects">
     <div class="container">
-        <h1 class="projectsH1">Professional Arts &amp; Crafts</h1>
-            
-        
-            <div class="projectImg">     
-                <div class="front img1">
-                    <h2><span class="imgText">Character Counting App</span></h2>  
-                </div>
-                <div class="back">
-                    <p>Simple character and word counting app I built with Vanilla JavaScript.</p><br>
-                    <a href="https://nlinerode.github.io/charCountApp/">https://nlinerode.github.io/charCountApp/</a>
-                </div>
+        <h1 class="sectionH1">Professional Arts &amp; Crafts</h1>
+        <!-- Portfolio -->
+        <div class="projectImg">     
+            <div class="front img img1">
+                <h2><span class="imgText">NL Web Design</span></h2>  
             </div>
-
-            <div class="projectImg">     
-                <div class="front img2">
-                    <h2><span class="imgText">Coming Soon...</span></h2>  
-                </div>
-                <div class="back">
-                    <p class="emptyImgText">Nothing here yet!</p>
-                    <a href="#"></a>
-                </div>
+            <div class="back img1Back">
+                <p>My online portfolio (the website you are currently viewing). Created from scratch with vanilla CSS, vanilla JS and a few jQuery plugins.</p> <br>
+                <a href="https://nlinerode.github.io/portfolioSite">https://nlinerode.github.io/portfolioSite</a>
             </div>
-            <div class="projectImg">     
-                <div class="front img3">
-                    <h2><span class="imgText">Coming Soon...</span></h2>  
-                </div>
-                <div class="back">
-                    <p class="emptyImgText">Nothing here yet!</p>
-                    <a href="#"></a>
-                </div>
+        </div>
+        <!-- Char Count App -->
+        <div class="projectImg">     
+            <div class="front img img2">
+                <h2><span class="imgText">Character Counting App</span></h2>  
             </div>
-            <div class="projectImg">     
-                <div class="front img4">
-                    <h2><span class="imgText">Coming Soon...</span></h2>  
-                </div>
-                <div class="back">
-                    <p class="emptyImgText">Nothing here yet!</p>
-                    <a href="#"></a>
-                </div>
+            <div class="back img2Back">
+                <p>Simple character and word counting app I built with Vanilla JavaScript.</p><br>
+                <a href="https://nlinerode.github.io/charCountApp/">https://nlinerode.github.io/charCountApp/</a>
             </div>
-            <div class="projectImg">     
-                <div class="front img5">
-                    <h2><span class="imgText">Coming Soon...</span></h2>  
-                </div>
-                <div class="back">
-                    <p class="emptyImgText">Nothing here yet!</p>
-                    <a href="#"></a>
-                </div>
+        </div>
+        <!--  -->
+        <div class="projectImg">     
+            <div class="front img img3">
+                <h2><span class="imgText">Coming Soon...</span></h2>  
             </div>
-            <div class="projectImg">     
-                <div class="front img6">
-                    <h2><span class="imgText">Coming Soon...</span></h2>  
-                </div>
-                <div class="back">
-                    <p class="emptyImgText">Nothing here yet!</p>
-                    <a href="#"></a>
-                </div>
+            <div class="back img3Back">
+                <p class="emptyImgText">Nothing here yet!</p> <br>
+                <a href="#"></a>
             </div>
-    
-
-          <!-- <a href="#">
-            <div class="projectImg img2">     
-                <h2><span class="imgText">Coming Soon...</span></h2>    
+        </div>
+        <!--  -->
+        <div class="projectImg">     
+            <div class="front img img4">
+                <h2><span class="imgText">Coming Soon...</span></h2>  
             </div>
-        </a>
-        <a href="#">
-            <div class="projectImg img3">            
-                <h2><span class="imgText">Coming Soon...</span></h2>    
+            <div class="back img4Back">
+                <p class="emptyImgText">Nothing here yet!</p> <br>
+                <a href="#"></a>
             </div>
-        </a>
-        <a href="#">
-            <div class="projectImg img4">            
-                <h2><span class="imgText">Coming Soon...</span></h2>    
+        </div>
+        <!--  -->
+        <div class="projectImg">     
+            <div class="front img img5">
+                <h2><span class="imgText">Coming Soon...</span></h2>  
             </div>
-        </a>
-        <a href="#">
-            <div class="projectImg img5">           
-                <h2><span class="imgText">Coming Soon...</span></h2>    
+            <div class="back img5Back">
+                <p class="emptyImgText">Nothing here yet!</p><br>
+                <a href="#"></a>
             </div>
-        </a>
-         <a href="#"> 
-            <div class="projectImg img6">            
-                <h2><span class="imgText">Coming Soon...</span></h2>    
+        </div>
+        <!--  -->
+        <div class="projectImg">     
+            <div class="front img img6">
+                <h2><span class="imgText">Coming Soon...</span></h2>  
             </div>
-         </a>     -->
+            <div class="back img6Back">
+                <p class="emptyImgText">Nothing here yet!</p><br>
+                <a href="#"></a>
+            </div>
+        </div>     
     </div>
 </section>
 
 <hr>
-<!--contact section  -->
+
+<!-- CONTACT SECTION -->
 <section class="contact" id="contact">
     <div class="container">
         <div class="contactContainer">
@@ -175,6 +171,7 @@
                 </form>
             </div>
         </div>
+        <!--social contact section  -->
         <div class="contactContainer">    
             <aside class="socialContact">
                 <h1>Web Savvy?</h1>
@@ -183,13 +180,12 @@
                 <a href="https://github.com/nlinerode"><i class="fa fa-github" aria-hidden="true"></i></a>
                 <!--linkedin  -->
                 <a href="https://www.linkedin.com/in/nathan-linerode-8b301a2b/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                <!--  -->
+                <!-- email -->
                 <a href="mailto:nlinerode2@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
             </aside>
         </div>
     </div>
 </section>
-<!--social contact section  -->
 
 
 

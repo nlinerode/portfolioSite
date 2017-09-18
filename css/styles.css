@@ -32,6 +32,11 @@ body{
 h1{
     font-family: 'Raleway', sans-serif; 
     font-size: 2rem;
+    padding-bottom: 1.5rem;
+}
+
+.sectionH1{
+    text-align: center;
 }
 
 label {
@@ -43,6 +48,9 @@ section{
     margin-bottom: 4%;
     
 }
+img{
+    border-radius: 10px;
+}
 
 hr{
     border: 0;
@@ -52,6 +60,9 @@ hr{
     width: 50%;
 }
 
+/* Modal */
+
+
 /*javascript classes  *******************************************************************/
 .scrollNav{
     background-color: #111;
@@ -60,6 +71,7 @@ hr{
     opacity: .7;
 }
 
+/* MEDIA <210 Landscape  *******************************************************************************************************/
 @media (min-width: 210px) and (orientation:landscape){
     body{
         margin-top: 0;
@@ -74,9 +86,18 @@ hr{
     body{
         margin-top: 25%;
     }
-
     p {
     font-size: 1.1rem;
+    }
+    article{
+        display:block;
+        text-align: center;
+        margin-bottom: 8%;
+        width: 100%; 
+    }
+    article h2{
+        padding: 1.1rem 0;
+        text-align: center;
     }
     /*header  *******************************************************************/
     header{
@@ -173,30 +194,29 @@ hr{
     .about{
         padding-top: 25%;
     }
-
-    .vertText{
-        display:block;
-        /* margin: 1%; */
-         padding: 3%; 
-        text-align: center;
-        width:100%;
-        /* display:inline-block; */
-    }
-      .aboutText{
-        display:block;
-        text-align: center;
-        margin-bottom: 8%;
-        width: 100%; 
-    }
-    /* .aboutImg{
-        width: 45%;
-        display: inline-block;
-    } */ 
     .personalImg{
-        float: block;
+        display: block;
+        float: left;
         height:auto;
         margin: 2% auto 5%;
         width: 100vw;
+    }
+
+    /* RESPONSIVE SECTION  *********************************************************/
+    .respWeb{
+         /* TODO check on ie10 wpm to see if margins and padding affect jumping around */
+        padding-top: 10%;
+    }
+    .ux{
+        /* float: left; */
+        width: 50vw;
+    }
+    .uxImg{
+        display: block;
+        float:right;
+        height:auto;
+        margin: 2% auto 5%;
+        width: 50vw;
     }
 
     /* PROJECTS  *******************************************************************/
@@ -208,10 +228,6 @@ hr{
         background-image: -o-linear-gradient(#eee, #ccc, #eee);
         background-image: linear-gradient(#eee, #ccc, #eee) ;
         padding-top: 25%;
-    }
-
-    .projectsH1{
-        text-align: center;
     }
 
     .projects h2{
@@ -245,9 +261,17 @@ hr{
         /* word-break: break-all; */
     }
     .back a{
+        border-bottom: 1px solid transparent;
         color: #fff;
+        line-height: 1.6;
         text-decoration: none;
+        transition: all ease .3s;
         word-break: break-all;
+    }
+
+    .back a:hover{
+        color: #ddd;
+        border-color: #ccc;
     }
 
     .imgText{
@@ -255,51 +279,75 @@ hr{
         position: absolute;
         bottom: 0;
         left: 0;
+        text-align: center;
     }
 
     .emptyImgText{
         font-size: 1.2rem !important;
+        transition: all ease .4s;
+        
+    }
+    .emptyImgText:hover{
+        color: #ddd;
+        /* TODO get opinion on the translate */
+        transform: translateY(50px)
     }
     .projects a:visted{
         color: #fff;
     }
 
-    .img1{
-        background-image: url('../img/charCountApp.PNG');
-        background-position: center;
-        background-size: cover;
+    .img{
         border-radius: 15px;
-    }
-
-    .img2{
-        border-radius:15px;
-        background-image: url('../img/questionMark.jpeg');
         background-position: center;
         background-size: cover;
+    }
+    .img1{
+        background-image: url('../img/portfolioSite.PNG');
+        background-position: left;
+    }
+    .img1Back{
+        background-image: linear-gradient(rgba(68, 68, 68 ,0.7),rgba(68,68,68,0.7)), url('../img/portfolioSite.PNG');
+        background-size: cover;
+    }
+    .img2{
+        background-image: url('../img/charCountApp.PNG');
+    }
+    .img2Back{
+        background-image: linear-gradient(rgba(68, 68, 68 ,0.7),rgba(68,68,68,0.7)), url('../img/charCountApp.PNG');
+        background-size: cover;
+        background-position: center;
     }
     .img3{
-        border-radius:15px;
-        background-image: url('../img/questionMark.jpeg');
-        background-position: center;
+        background-image: url('../img/questionMark.jpeg')
+    }
+    .img3Back{
+        background-image: linear-gradient(rgba(68, 68, 68 ,0.7),rgba(68,68,68,0.7)), url('../img/questionMark.jpeg');
         background-size: cover;
+        background-position: center;
     }
     .img4{
-        border-radius:15px;
-        background-image: url('../img/questionMark.jpeg');
-        background-position: center;
+        background-image: url('../img/questionMark.jpeg')
+    }
+    .img4Back{
+        background-image: linear-gradient(rgba(68, 68, 68 ,0.7),rgba(68,68,68,0.7)), url('../img/questionMark.jpeg');
         background-size: cover;
+        background-position: center;
     }
     .img5{
-        border-radius:15px;
-        background-image: url('../img/questionMark.jpeg');
-        background-position: center;
+        background-image: url('../img/questionMark.jpeg')
+    }
+    .img5Back{
+        background-image: linear-gradient(rgba(68, 68, 68 ,0.7),rgba(68,68,68,0.7)), url('../img/questionMark.jpeg');
         background-size: cover;
+        background-position: center;
     }
     .img6{
-        border-radius:15px;
-        background-image: url('../img/questionMark.jpeg');
-        background-position: center;
+        background-image: url('../img/questionMark.jpeg')
+    }
+    .img6Back{
+        background-image: linear-gradient(rgba(68, 68, 68 ,0.7),rgba(68,68,68,0.7)), url('../img/questionMark.jpeg');
         background-size: cover;
+        background-position: center;
     }
     /*CONTACT SECTION *******************************************************************/
     .contact{
@@ -562,6 +610,10 @@ hr{
     p{
         font-size: 1.2rem;
     }
+    article{
+        text-align: left;
+        margin-top:2%;
+    }
     /*header  *******************************************************************/
     header{
         background-color: rgba(0, 0, 0, 0);
@@ -637,22 +689,28 @@ hr{
     .about{
         padding-top: 9%;
     }
-     .vertText{
-        /* float:left; */
-        /* margin: 1%; */
-        padding:0;
-        text-align: left;
-    } 
-    .aboutText{
-        text-align: left;
-        margin-top:2%;
-    }
-  
     .personalImg{
         float: left;
         height:auto;
         margin-right: 5%;
         width: 40vw;
+    }
+
+    /* RESPONSIVE SECTION  *********************************************************/
+
+    .uxDiv{
+        float:left;
+        width: 50%;
+    }
+    .uxImgDiv{
+        float:right;
+        margin-left:5%;
+        width: 45%;
+    }
+    .uxImg{
+        /* display: inline-block; */
+        height:auto;
+        width: 30vw;
     }
     /* CONTACT **************************************************************************/
     .contact{
@@ -731,9 +789,8 @@ hr{
     /* PROJECTS  *********************************************************************/
     .projects{
         padding-top: 9%;
-    }
-    .projectsH1{
-        text-align: left;
+        /* TODO check on ie10 wpm to see if margins and padding affect jumping around */
+        margin-bottom: 11%;
     }
 
     .projectImg{
@@ -750,12 +807,6 @@ hr{
     .projectImg a {
         font-size: .8rem;
     }
-
-    /* .imgText{
-        position: absolute;
-        top:0;
-        left: 0;
-    } */
 }
 
 /* MEDIA >976px */
