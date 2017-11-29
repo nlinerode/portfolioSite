@@ -176,7 +176,10 @@ hr{
 
     /* SHOWCASE  *******************************************************************/
     .showcase{
-        align-items: center;
+        /* flexbox */
+        display:flex;
+        justify-content: center;
+        align-items: center;    /* end flexbox */
         background-image: url('../img/country.jpeg'); 
         background-position: center;
         background-size: cover;
@@ -188,10 +191,6 @@ hr{
         padding:30% 25px;
         text-align: center;
         width:100%;
-        /* flexbox */
-        display:flex;
-        justify-content: center;
-        align-items: center;
     }
     .showcase h1{
         font-size: 1.5rem;
@@ -264,8 +263,6 @@ hr{
         font-size: .7rem;
         height:50vw; 
         margin: 5% auto;
-        overflow-x: auto;
-        overflow-y: auto;
         position: relative;
         text-align: center; 
         width:50vw; 
@@ -274,6 +271,8 @@ hr{
     .back{
         color: #fff;
         display:hidden;
+        overflow-x: auto;
+        overflow-y: auto;
         padding:20% 2% 0;
         text-align: center;
         /* word-break: break-all; */
