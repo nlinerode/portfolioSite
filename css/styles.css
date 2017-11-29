@@ -11,7 +11,8 @@ html{
 }
 
 body{
-    background-color: #eee;
+    background-color: rgb(51, 53, 56);
+    color: rgb(247, 250, 255);
     font-family: 'Saira', sans-serif;
     margin-bottom: 60px; 
     line-height: 1.5;
@@ -41,6 +42,7 @@ h1{
 
 label {
     font-size: 1.2rem;
+    margin-bottom: 15px;
 }
 
 section{
@@ -49,10 +51,10 @@ section{
     
 }
 img{
-    border-radius: 10px;
-    border-right: 1px solid #444;
-    border-bottom: 1px solid #444;
-    box-shadow: 3px 3px 4px #444;
+    /* border-radius: 10px; */
+    border-right: 1px solid rgba(68, 68, 68, .5);
+    border-bottom: 1px solid rgba(68, 68, 68, .5);
+    box-shadow: 3px 4px 9px 0px rgba(17, 17, 17, 0.3);
 }
 
 hr{
@@ -68,10 +70,10 @@ hr{
 
 /*javascript classes  *******************************************************************/
 .scrollNav{
-    background-color: #111;
+    background-color: rgb(25, 25, 25);
      color: #fff; 
     /* height: 30px; */
-    opacity: .7;
+    opacity: .95;
 }
 
 /* MEDIA <210 Landscape  *******************************************************************************************************/
@@ -104,7 +106,7 @@ hr{
     }
     /*header  *******************************************************************/
     header{
-        background-color:#222;;
+        background-color: rgba(17, 17, 17, .7);
         color: #eee;
         line-height: .7;
         padding: 1%;
@@ -118,6 +120,7 @@ hr{
         text-align: center;
         transition: .4s ease;
         z-index: 1;
+
     }
 
     .h1Brand{
@@ -135,6 +138,7 @@ hr{
         font-size: 1.7rem; 
         text-decoration: none;
     }
+    /* simple text span */
     .simple{
         font-size: 1.5rem;
         color:#bbb;
@@ -167,7 +171,7 @@ hr{
         color:#eee;
     }
     nav ul li a:hover{
-        color:#ddd;
+        color: rgb(0, 106, 37);
     }
 
     /* SHOWCASE  *******************************************************************/
@@ -179,15 +183,15 @@ hr{
         border-bottom: 2px solid #111;
         box-shadow: 0 3px 6px #222;
         color: #fff;
-        /* display: flex;   */
-        /* flex-direction: column;  */
-        height: 75vh;
-         /* justify-content: center;  */
+        height: 100vh;
         overflow: none;
         padding:30% 25px;
         text-align: center;
         width:100%;
-        
+        /* flexbox */
+        display:flex;
+        justify-content: center;
+        align-items: center;
     }
     .showcase h1{
         font-size: 1.5rem;
@@ -196,13 +200,18 @@ hr{
     /* ABOUT  ********************************************************************/
     .about{
         padding-top: 30%;
+        width: 100%;
+    }
+
+    p{
+        margin-bottom: 15px;
     }
     .personalImg{
         display: block;
         float: left;
         height:auto;
-        margin: 2% auto 5%;
-        width: 100vw;
+        margin: 2% 1% 5%;
+        width: 98%;
     }
 
     /* RESPONSIVE SECTION  *********************************************************/
@@ -230,11 +239,11 @@ hr{
     /* PROJECTS  *******************************************************************/
 
     .projects{
-        background: #ddd;
+        /* background: #ddd;
         background-image: -webkit-linear-gradient(#eee, #ccc, #eee);
         background-image: -moz-linear-gradient(#eee, #ccc, #eee);
         background-image: -o-linear-gradient(#eee, #ccc, #eee);
-        background-image: linear-gradient(#eee, #ccc, #eee) ;
+        background-image: linear-gradient(#eee, #ccc, #eee) ; */
         padding-top: 30%;
     }
 
@@ -396,14 +405,23 @@ hr{
         font-size: 2rem;
         float:left;
         margin:10% 5% 0 6%;
+        text-shadow: 1px 1px #111111;
     }
 
     .fa:focus{
         color: rgba(0, 106, 37, .8);
     }
 
+    .fa:hover{
+        color:rgba(0, 106, 37, .7);
+    }
+
     .fa a:visited{
         color: #000;
+    }
+
+    .inputs{
+        margin-bottom: 2rem;
     }
 
     input {
@@ -436,6 +454,8 @@ hr{
     input:focus:-ms-input-placeholder{
         color: rgb(0, 106, 37);
     }
+
+
 
     textarea{
         border: 2px solid #ddd;
@@ -471,11 +491,16 @@ hr{
         border-radius: 5px;
         box-shadow: 2px 2px rgba(0, 0, 0, .3);
         cursor: pointer;
+        font-family: 'Saira', sans-serif;
         font-size: 1.1rem;
         margin-top: 1rem;
         margin-bottom: 1rem; 
         padding: 3% 5%;
         width: 100%;
+    }
+
+    button:hover{
+        color: rgb(0, 106, 37);;
     }
 
     button:focus{
@@ -627,7 +652,7 @@ hr{
     }
     /*header  *******************************************************************/
     header{
-        background-color: rgba(0, 0, 0, 0);
+        background-color: rgba(17, 17, 17, .7);
         color: #eee;
         line-height: 1.3;
         padding: 10px 10px;
@@ -682,7 +707,7 @@ hr{
         color:#eee;
     }
     nav ul li a:hover{
-        color:#ddd;
+        color:rgb(0, 106, 37);
     }
 
     /* SHOWCASE*********************************************************************/

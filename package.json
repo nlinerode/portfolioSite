@@ -1,0 +1,29 @@
+{
+  "name": "portfoliosite",
+  "version": "1.0.0",
+  "description": "My portfolio website",
+  "main": "app.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nlinerode/portfolioSite.git"
+  },
+  "author": "Nathan Linerode",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nlinerode/portfolioSite/issues"
+  },
+  "homepage": "https://github.com/nlinerode/portfolioSite#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "nodemailer": "^4.2.0"
+  },
+  "devDependencies": {
+    "jshint": "^2.9.5"
+  }
+}
